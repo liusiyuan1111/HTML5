@@ -1,4 +1,4 @@
-<a name="index">**Index**</a>
+目录
 <a href="#0">HTML5融媒体制作竞赛</a>  
 &emsp;<a href="#1">公告</a>  
 &emsp;<a href="#2">学习资料</a>  
@@ -9,10 +9,10 @@
 &emsp;<a href="#7">视频资料</a>  
 &emsp;<a href="#8">比赛资料</a>  
 &emsp;<a href="#9">项目案例</a>  
+
 # <a name="0">HTML5融媒体制作竞赛</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
 这是一个用于广东工贸职业技术学院的软件工程系参加HTML5融媒体内容制作职业技能大赛的repo，包括学习资料，slides，视频资料，比赛资料，项目案例等。
-
 
 
 
