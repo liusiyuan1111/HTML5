@@ -5,23 +5,27 @@
 - [HTML5融媒体制作竞赛](#html5-------)
   * [公告](#--)
   * [学习资料](#----)
-    + [小白入门（建议新生从这里开始）：](#----------------)
-    + [开始（建议二年级学生从这里开始）：](#-----------------)
-    + [进阶：](#---)
+    + [小白入门（建议新生从这里开始）](#---------------)
+    + [开始（建议二年级学生从这里开始）](#----------------)
+    + [进阶](#--)
+    + [其他书籍](#----)
   * [视频资料](#----)
+  * [比赛资料](#----)
+  * [项目案例](#----)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 
 ## 公告
 
 - 欢迎star,fork,欢迎通过issue反馈与建议
-- 2021届广东省职业技能大赛h5融媒体内容制作赛项时间初定为5.29-5.30，后续有可能因为疫情改变时间
-- 可以添加自己的项目资源，欢迎大家的贡献*(੭*ˊᵕˋ)੭
+- 2020-2021年度广东省职业技能大赛h5融媒体内容制作赛项时间初定为5.29-5.30，希望大家抓紧时间学习，祝大家能取得好的成绩。
+- 可以添加自己的资源，欢迎大家的贡献*(੭*ˊᵕˋ)੭
+- 不要删除其他人的文件
 
 ## 学习资料
 
-### 小白入门（建议新生从这里开始）：
+### 小白入门（建议新生从这里开始）
 
 ​		w3school上的HTML/CSS/Javascript教程——技术手册式的教程，比较全面，照着实例敲一遍，旁边有小测验也可以试着做一下
 
@@ -39,46 +43,46 @@
 
 
 
-### 开始（建议二年级学生从这里开始）：
+### 开始（建议二年级学生从这里开始）
 
 - 《Head First HTML and CSS》
 
   这本书可以作为学前端的开始，内容浅显易懂，如果这本书看不懂的话，建议告别前端，去找其他学习方向。尽量在一周时间学完这本书，最长不要超过两周
 
-<img src="https://pic1.zhimg.com/80/v2-9dbef971d17087d138043ea9ff611846_720w.jpg?source=1940ef5c" alt="img" width="33%" align="center" />
+<div align=center><img src="https://pic1.zhimg.com/80/v2-9dbef971d17087d138043ea9ff611846_720w.jpg?source=1940ef5c" alt="img" width="33%" /></div>
 
-### 进阶：
+### 进阶
 
 - 《HTML5权威指南》
 
   非常全面的书，内容也很新，包含了HTML5+CSS3+JS DOM，适合有一定基础的学生学习。
 
-<img src="https://img3.doubanio.com/view/subject/l/public/s27169241.jpg" alt="img"  align="center" width="25%" />
+<div align=center><img src="https://img3.doubanio.com/view/subject/l/public/s27169241.jpg" alt="img"   width="25%" /></div>
 
 - 《CSS权威指南》
 	
 	最权威的CSS书籍，有时间可以反复阅读，并当作字典随时查阅。
 		
 
-![img](https://img9.doubanio.com/view/subject/l/public/s2921314.jpg)
+<div align=center><img src="https://img9.doubanio.com/view/subject/l/public/s2921314.jpg"  ></div>
 
 - 《JavaScript高级程序设计》
 
   又名“红宝书”，“Javascript圣经”，前端程序员必备的一本书，内容全面，可阅读性强，虽然书本很厚，但其实也算是前端入门书籍，如果以后要做前端相关工作，建议通读三遍以上，掌握这本书，可以直接去面试前端岗位。
 
-<img src="https://img3.doubanio.com/view/subject/l/public/s8958650.jpg" alt="img" width="25%" />
+<div align=center><img src="https://img3.doubanio.com/view/subject/l/public/s8958650.jpg" alt="img" width="25%" /></div>
 
-4. 其他书籍
+### 其他书籍
 
 - 《JavaScript语言精粹》
 也是前端必看，很薄的一本书，对Javascript的去粗取精
 
-![img](https://img9.doubanio.com/view/subject/l/public/s3651235.jpg)
+<div align=center><img src="https://img9.doubanio.com/view/subject/l/public/s3651235.jpg"></div>
 
 - 《HTML5与CSS3权威指南》
   分为上下两册，上册是HTML5的知识，下册是CSS3的知识，看上册即可。相比以上经典书籍，写得一般，不建议购买，不过由于是国人作者，在用语上更加贴近国人，相对来说阅读不吃力，可以直接查阅电子版。在repo里上传了相关电子版和实例代码。
 
-  <img src="https://img9.doubanio.com/view/subject/l/public/s28319866.jpg" alt="img" width="33%" />
+  <div align=center><img src="https://img9.doubanio.com/view/subject/l/public/s28319866.jpg" alt="img" width="33%" /></div>
 
 ## 视频资料
 
@@ -95,3 +99,21 @@
 	黑马程序员的教程，新生建议从头开始学，二年级学生可以从p391 移动端基础开始学习
 	
 	
+
+## 比赛资料
+
+比赛资料已上传至“比赛资料”目录下，后续会一直更新。
+
+包含以下文件：
+
+- 广东省教育厅办公室关于做好2020-2021年度全省职业院校学生专业技能大赛有关工作的通知
+
+- (高职组）2020-2021“融媒体内容制作”赛项规程（更新版12-25）改
+- 比赛要求掌握的前端知识体系
+- 编程部分相关内容
+
+## 项目案例
+
+大家按照我写的这个教程，把自己平时学习时的练习代码和我布置的项目案例代码放在项目案例的目录下，练习代码放在“学习”文件夹，案例代码放在“项目”文件夹
+
+教程：
