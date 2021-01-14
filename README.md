@@ -34,14 +34,14 @@
 
    这本书可以作为学前端的开始，内容浅显易懂，如果这本书看不懂的话，建议告别前端，去找其他学习方向。尽量在一周时间学完这本书，最长不要超过两周
 
-<img src="https://pic1.zhimg.com/80/v2-9dbef971d17087d138043ea9ff611846_720w.jpg?source=1940ef5c" alt="img" style="zoom: 33%;" />
+<img src="https://pic1.zhimg.com/80/v2-9dbef971d17087d138043ea9ff611846_720w.jpg?source=1940ef5c" alt="img" width="33%" />
 
 3. 进阶：
 - 《HTML5权威指南》
 
   非常全面的书，内容也很新，包含了HTML5+CSS3+JS DOM，适合有一定基础的学生学习。
 
-<img src="https://img3.doubanio.com/view/subject/l/public/s27169241.jpg" alt="img" style="zoom: 25%;" />
+<img src="https://img3.doubanio.com/view/subject/l/public/s27169241.jpg" alt="img"  width="25%" />
 
 - 《CSS权威指南》
 	
@@ -54,7 +54,7 @@
 
   又名“红宝书”，“Javascript圣经”，前端程序员必备的一本书，内容全面，可阅读性强，虽然书本很厚，但其实也算是前端入门书籍，如果以后要做前端相关工作，建议通读三遍以上，掌握这本书，可以直接去面试前端岗位。
 
-<img src="https://img3.doubanio.com/view/subject/l/public/s8958650.jpg" alt="img" style="zoom: 25%;" />
+<img src="https://img3.doubanio.com/view/subject/l/public/s8958650.jpg" alt="img" width="25%" />
 
 4. 其他书籍
 
@@ -66,7 +66,7 @@
 - 《HTML5与CSS3权威指南》
   分为上下两册，上册是HTML5的知识，下册是CSS3的知识，看上册即可。相比以上经典书籍，写得一般，不建议购买，不过由于是国人作者，在用语上更加贴近国人，相对来说阅读不吃力，可以直接查阅电子版。在repo里上传了相关电子版和实例代码。
 
-  <img src="https://img9.doubanio.com/view/subject/l/public/s28319866.jpg" alt="img" style="zoom: 50%;" />
+  <img src="https://img9.doubanio.com/view/subject/l/public/s28319866.jpg" alt="img" width="33%" />
 
 ## 视频资料
 
