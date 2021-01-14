@@ -2,8 +2,15 @@
 
 这是一个用于广东工贸职业技术学院的软件工程系参加HTML5融媒体内容制作职业技能大赛的repo，包括学习资料，slides，视频资料，比赛资料，项目案例等。
 
-[TOC]
+- [HTML5融媒体制作竞赛](#html5-------)
+  * [公告](#--)
+  * [学习资料](#----)
+    + [小白入门（建议新生从这里开始）：](#----------------)
+    + [开始（建议二年级学生从这里开始）：](#-----------------)
+    + [进阶：](#---)
+  * [视频资料](#----)
 
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 
 ## 公告
