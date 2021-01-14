@@ -10,22 +10,22 @@
 &emsp;<a href="#8">比赛资料</a>  
 &emsp;<a href="#9">项目案例</a>  
 
-# <a name="0">HTML5融媒体制作竞赛</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+# <a name="0">HTML5融媒体制作竞赛</a><a style="float:right;text-decoration:none;" href="#index"> </a>
 
 这是一个用于广东工贸职业技术学院的软件工程系参加HTML5融媒体内容制作职业技能大赛的repo，包括学习资料，slides，视频资料，比赛资料，项目案例等。
 
 
 
-## <a name="1">公告</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+## <a name="1">公告</a><a style="float:right;text-decoration:none;" href="#index"> </a>
 
 - 欢迎star,fork,欢迎通过issue反馈与建议
 - 2020-2021年度广东省职业技能大赛h5融媒体内容制作赛项时间初定为5.29-5.30，希望大家抓紧时间学习，祝大家能取得好的成绩。
 - 可以添加自己的资源，欢迎大家的贡献*(੭*ˊᵕˋ)੭
 - 不要删除其他人的文件
 
-## <a name="2">学习资料</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+## <a name="2">学习资料</a><a style="float:right;text-decoration:none;" href="#index">  </a>
 
-### <a name="3">小白入门（建议新生从这里开始）</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### <a name="3">小白入门（建议新生从这里开始）</a><a style="float:right;text-decoration:none;" href="#index">  </a>
 
 ​		w3school上的HTML/CSS/Javascript教程——技术手册式的教程，比较全面，照着实例敲一遍，旁边有小测验也可以试着做一下
 
@@ -43,7 +43,7 @@
 
 
 
-### <a name="4">开始（建议二年级学生从这里开始）</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### <a name="4">开始（建议二年级学生从这里开始）</a><a style="float:right;text-decoration:none;" href="#index">  </a>
 
 - 《Head First HTML and CSS》
 
@@ -51,7 +51,7 @@
 
 <div align=center><img src="https://pic1.zhimg.com/80/v2-9dbef971d17087d138043ea9ff611846_720w.jpg?source=1940ef5c" alt="img" width="33%" /></div>
 
-### <a name="5">进阶</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### <a name="5">进阶</a><a style="float:right;text-decoration:none;" href="#index">  </a>
 
 - 《HTML5权威指南》
 
@@ -72,7 +72,7 @@
 
 <div align=center><img src="https://img3.doubanio.com/view/subject/l/public/s8958650.jpg" alt="img" width="25%" /></div>
 
-### <a name="6">其他书籍</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+### <a name="6">其他书籍</a><a style="float:right;text-decoration:none;" href="#index">  </a>
 
 - 《JavaScript语言精粹》
 也是前端必看，很薄的一本书，对Javascript的去粗取精
@@ -84,7 +84,7 @@
 
   <div align=center><img src="https://img9.doubanio.com/view/subject/l/public/s28319866.jpg" alt="img" width="33%" /></div>
 
-## <a name="7">视频资料</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+## <a name="7">视频资料</a><a style="float:right;text-decoration:none;" href="#index">  </a>
 
 以下两个教程，前面基础部分新生任选其一学习即可，二年级学生如果觉得自己基础学得一般的话也可以选择一个教程跟着学一遍。
 
@@ -100,7 +100,7 @@
 	
 	
 
-## <a name="8">比赛资料</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+## <a name="8">比赛资料</a><a style="float:right;text-decoration:none;" href="#index">  </a>
 
 比赛资料已上传至“比赛资料”目录下，后续会一直更新。
 
@@ -112,7 +112,7 @@
 - 比赛要求掌握的前端知识体系
 - 编程部分相关内容
 
-## <a name="9">项目案例</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+## <a name="9">项目案例</a><a style="float:right;text-decoration:none;" href="#index">  </a>
 
 大家按照我写的这个教程，把自己平时学习时的练习代码和我布置的项目案例代码放在项目案例的目录下，练习代码放在“学习”文件夹，案例代码放在“项目”文件夹
 
