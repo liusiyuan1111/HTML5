@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P187 26-清除浮动之双伪元素</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .clearfix:before,
+    .clearfix:after {
+      content: "";
+      display: table;
+    }
+
+    .clearfix:after {
+      clear: both;
+    }
+
+    .claerfix {
+      *zoom: 1;
+      /* IE6、7专用 */
+    }
+
+    .box {
+      width: 900px;
+      margin: 20px auto;
+      border: 1px solid black;
+    }
+
+    .box .left {
+      width: 400px;
+      height: 300px;
+      background-color: pink;
+      float: left;
+    }
+
+    .box .right {
+      width: 500px;
+      height: 300px;
+      background-color: purple;
+      float: left;
+    }
+
+    .footer {
+      height: 150px;
+      background-color: royalblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box clearfix">
+    <div class="left">left</div>
+    <div class="right">right</div>
+  </div>
+  <div class="footer"></div>
+</body>
+
+</html>
