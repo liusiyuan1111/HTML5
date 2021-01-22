@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P181 20-常见的网页布局</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    .top {
+      height: 50px;
+      background-color: gray;
+    }
+
+    .banner {
+      width: 980px;
+      height: 150px;
+      background-color: gray;
+      margin: 10px auto;
+    }
+
+    .box {
+      width: 980px;
+      height: 300px;
+      background-color: pink;
+      margin: 10px auto;
+    }
+
+    .box ul li {
+      width: 237px;
+      height: 300px;
+      background-color: gray;
+      float: left;
+      margin-right: 10px;
+    }
+
+    .box ul .last {
+      margin-right: 0px;
+    }
+
+    .footer {
+      height: 200px;
+      background-color: gray;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top">top</div>
+  <div class="banner">banner</div>
+  <div class="box">
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li class="last">4</li>
+    </ul>
+  </div>
+  <div class="footer">footer</div>
+</body>
+
+</html>

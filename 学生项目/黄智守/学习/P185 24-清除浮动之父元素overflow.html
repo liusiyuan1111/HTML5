@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P185 24-清除浮动之父元素overflow</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .box {
+      width: 900px;
+      margin: 20px auto;
+      border: 1px solid black;
+      overflow: hidden;
+      /* 清除浮动-父级添加overflow */
+    }
+
+    .box .left {
+      width: 400px;
+      height: 300px;
+      background-color: pink;
+      float: left;
+    }
+
+    .box .right {
+      width: 500px;
+      height: 300px;
+      background-color: purple;
+      float: left;
+    }
+
+    .footer {
+      height: 150px;
+      background-color: royalblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="left">left</div>
+    <div class="right">right</div>
+  </div>
+  <div class="footer"></div>
+</body>
+
+</html>
