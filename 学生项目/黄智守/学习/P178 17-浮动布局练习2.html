@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P178 17-浮动布局练习2</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    .box {
+      width: 1226px;
+      height: 285px;
+      background-color: pink;
+      margin: 20px auto;
+    }
+
+    .box li {
+      width: 296px;
+      height: 285px;
+      background-color: purple;
+      float: left;
+      margin-right: 14px;
+    }
+
+    .box .last {
+      margin-right: 0px;
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="box">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li class="last">4</li>
+  </ul>
+</body>
+
+</html>
