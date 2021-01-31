@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#div1{width:198px; height:66px; padding:10px; border: 1px solid blue;}
+		</style>
+		<script type="text/javascript">
+			function allowDrop(ev)
+			{ev.preventDefault();}
+			function drag(ev)
+			{ev.dataTransfer.setData("Text",ev.target.id);}
+			function drop(ev)
+			{
+				ev.preventDefault();
+				var data=ev.dataTransfer.getData("Text");
+				ev.target.appendChild(document.getElementById(data));
+			}
+		</script>	
+	</head>	
+		
+	<body>
+	    <video width="400" height="200" controls="controls">
+			<source src="images/video.mp4" type="video/mp4">
+			当前浏览器不支持视频的播放。
+		</video>
+		<audio controls="controls">
+			<source src="images/天空之城audio.mp3">
+		</audio><hr/>
+		
+	<!------------------------------自定义播放大小----------------------------------->	
+		<div style="margin-top: 30px;">
+			<button onclick="playPause()">播放/暂停</button> 
+			<button onclick="makeBig()">大</button>
+			<button onclick="makeNormal()">中</button>
+			<button onclick="makeSmall()">小</button>
+			<br/> 
+		    <video width="500" height="300" id="video1"  style="margin-top:5px;">
+			<source src="images/video.mp4" type="video/mp4">
+			当前浏览器不支持视频的播放。
+		    </video>
+		</div>
+		<script type="text/javascript">
+		var myVideo=document.getElementById("video1");
+		function playPause()
+		{ 
+		if (myVideo.paused) 
+		  myVideo.play(); 
+		else 
+		  myVideo.pause(); 
+		}
+		function makeBig()
+		{ myVideo.width=800; }
+		function makeSmall()
+		{ myVideo.width=300; } 
+		function makeNormal()
+		{ myVideo.width=500; } 
+		</script><hr/>
+	
+    <!------------------------------拖放--------------------------------->	
+		<div style="float: left;">
+		<p>请把图片拖放到矩形中：</p>
+		
+		<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<br />
+		<img id="drag1" src="images/5.jpg" draggable="true" ondragstart="drag(event)" /><hr/>
+	    </div>
+	<!-------------------------------画布1----------------------------------------->	
+		
+		<div style="float: left;margin:50px 50px 0px 80px">
+		<canvas id="mycanvas" width="200" height="100" style="border:1px solid coral">
+		您的浏览器不支持画布功能。
+		</canvas>
+		<script type="text/javascript">
+		    var c=document.getElementById("mycanvas");
+			var cxt=c.getContext("2d");
+			cxt.moveTo(50,20);cxt.lineTo(90,20);cxt.lineTo(90,80);cxt.lineTo(120,80);
+			cxt.moveTo(120,20);cxt.lineTo(120,50);cxt.lineTo(50,50);cxt.lineTo(50,80);
+			cxt.stroke();
+		</script>
+		</div>
+	<!------------------------------画布2------------------------------------------------->	
+	    <div style="float: left;margin:50px 50px 0px 80px">
+	    <canvas id="mycanvas2" width="200" height="100" style="border:1px solid #c3c3c3;">
+	    您的浏览器不支持画布功能。	
+	    </canvas>
+	    <script type="text/javascript">
+		    var c=document.getElementById("mycanvas2");
+		    var cxt=c.getContext("2d");
+		    cxt.fillStyle="cornflowerblue";
+		    cxt.beginPath();
+		    cxt.arc(80,40,25,0,Math.PI*2,true);
+		    cxt.closePath();
+		    cxt.fill();
+        </script>	
+	    </div>
+	<!---------------------------画布3----------------------------------------------->    
+		<div style="float: left;margin:50px 50px 0px 80px">
+		<canvas id="myCanvas3" width="200" height="100" style="border:1px solid #c3c3c3;">
+		Your browser does not support the canvas element.
+		</canvas>
+		<script type="text/javascript">
+		    var c=document.getElementById("myCanvas3");
+		    var cxt=c.getContext("2d");
+		    var grd=cxt.createLinearGradient(10,10,180,80);
+		    grd.addColorStop(0,"#0000ff");
+		    grd.addColorStop(1,"#8f79ff");
+		    cxt.fillStyle=grd;
+		    cxt.fillRect(10,10,180,80);
+		</script>
+		</div>
+		
+	<!-------------------------------------svg---------------------------------------->
+		
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+		width="100%" height="100%"> 
+		<circle cx="300" cy="80" r="50" stroke="black"
+		stroke-width="2" fill="yellow"/>
+		</svg>
+	
+	<!--------------------------------存储---------------------------------------->
+		
+			
+		
+		
+		
+		
+		
+			
+		
+		
+		
+		
+		
+	</body>
+</html>
