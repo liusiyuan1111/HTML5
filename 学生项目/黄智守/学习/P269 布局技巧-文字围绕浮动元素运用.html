@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P269 布局技巧-文字围绕浮动元素运用</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      width: 250px;
+      height: 70px;
+      background-color: pink;
+      margin: 0px auto;
+      padding: 8px;
+    }
+
+    .box .pic {
+      float: left;
+      margin-right: 10px;
+    }
+
+    .box .pic img {
+      width: 70px;
+      height: 70px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="pic">
+      <img src="images/P263-avatar.jpg" alt="">
+    </div>
+    <p>talk is cheap.show me the code.</p>
+  </div>
+</body>
+
+</html>

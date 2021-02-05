@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P184 23-清除浮动本质之额外标签法</title>
+  <style>
+    .box {
+      width: 900px;
+      border: 1px solid black;
+      margin: 20px auto;
+    }
+
+    .box .left {
+      width: 400px;
+      height: 300px;
+      background-color: pink;
+      float: left;
+    }
+
+    .box .right {
+      width: 500px;
+      height: 300px;
+      background-color: purple;
+      float: right;
+    }
+
+    .footer {
+      height: 150px;
+      background-color: royalblue;
+    }
+
+    .clear {
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="left">left</div>
+    <div class="right">right</div>
+    <div class="clear"></div>
+  </div>
+  <div class="footer">footer</div>
+</body>
+
+</html>

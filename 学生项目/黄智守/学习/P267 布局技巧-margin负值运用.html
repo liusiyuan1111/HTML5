@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P267 布局技巧-margin负值运用</title>
+  <style>
+    div {
+      position: relative;
+      float: left;
+      width: 200px;
+      height: 300px;
+      border: 2px solid teal;
+      margin-left: -2px;
+    }
+
+    div:hover {
+      /* 1添加相对定位 */
+      /* position: relative; */
+      border: 2px solid red;
+      /* 2、父盒子添加相对定位，再用z-index提高定位 */
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+</body>
+
+</html>

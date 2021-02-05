@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P280 CSS3-新增属性选择器.html</title>
+  <style>
+    /* 1 */
+    /* input[value] {
+      color: pink;
+    } */
+
+    /* 2 */
+    /* input[type=text] {
+      color: pink;
+    } */
+
+    /* 3  ^ --> 开头  */
+    /* div[class^=icon] {
+      color: red;
+    } */
+
+    /* 4  $ --> 结尾*/
+    div[class$=data] {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 1 -->
+  <!-- <input type="text" value="请输入...">
+  <input type="text"> -->
+
+  <!-- 2 -->
+  <!-- <input type="text" name="" id="">
+  <input type="password" name="" id=""> -->
+
+  <!-- 3 -->
+  <!-- <div class="icon1">小图标1</div>
+  <div class="icon2">小图标2</div>
+  <div class="icon3">小图标3</div>
+  <div class="icon4">小图标4</div>
+  <div>zhishouh</div> -->
+
+  <!-- 4 -->
+  <div class="icon1-data">zhishouh1</div>
+  <div class="icon2-data">zhishouh2</div>
+  <div class="icon3-ico">huangzhishou</div>
+</body>
+
+</html>
