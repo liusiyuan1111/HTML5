@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<!-- 本网页的疑惑点：BOX里的盒子浮动不会影响BOX盒子外的其他元素，footer本身就不会浮动起来为什么要加清楚浮动 -->
+		<style type="text/css">
+			.box{
+				width: 400px;
+				height: 300px;
+				background-color: pink;
+				float: left;
+			/* 	overflow: hidden; */
+			}
+			.box>div{
+				float: left;
+				width: 100px;
+				height: 100px;
+				background-color: aquamarine;
+			}
+			.footer{
+				height: 100px;
+				width: 500px;
+				background-color: black;
+			}
+			.clear{
+				clear: both;
+			}
+		/* 	.clearfix:after{
+				content: "";
+				display: block;
+				height: 0px;
+				clear: both;
+				visibility:hidden;
+			} */
+			/* .clearfix{
+				*zoom:1;
+			} */
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div>one</div>
+			<div>tow</div>
+		</div>
+		<div class="clear"></div>
+		<div class="footer"></div>
+	</body>
+</html>
