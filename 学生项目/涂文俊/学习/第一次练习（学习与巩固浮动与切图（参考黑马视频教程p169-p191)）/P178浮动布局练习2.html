@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			li{
+				list-style: none;
+			}
+			.box{
+				width: 1226px;
+				height: 285px;
+				background-color: pink;
+				margin: 0 auto;
+			}
+			.box li{
+				width: 296px;
+				height: 285px;
+				background-color: purple;
+				float: left;
+				float: left;
+				margin-right:14px ;
+			}
+			/* 注意权重问题,不能写.last; */
+			.box .last{
+				margin-right:0px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="box">
+			<li>one</li>
+			<li>tow</li>
+			<li>three</li>
+			<li class="last">four</li>
+		</ul>
+	</body>
+</html>
