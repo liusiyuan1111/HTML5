@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P287 CSS3-新增伪元素选择器</title>
+  <style>
+    div {
+      height: 30px;
+      background-color: teal;
+      margin: 20px auto;
+    }
+
+    div::before {
+      content: 'zhi';
+      display: inline-block;
+      width: 50px;
+      height: 30px;
+      background-color: tomato;
+    }
+
+    div::after {
+      content: 'huang';
+      display: inline-block;
+      width: 50px;
+      height: 30px;
+      background-color: tomato;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    shou
+  </div>
+</body>
+
+</html>

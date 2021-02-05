@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P238-P243 淘宝焦点图</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .tb-promo {
+      position: relative;
+      width: 520px;
+      height: 280px;
+      margin: 100px auto;
+    }
+
+    .tb-promo img {
+      width: 520px;
+      height: 280px;
+    }
+
+    .tb-promo .prev,
+    .tb-promo .next {
+      position: absolute;
+      top: 50%;
+      margin-top: -15px;
+      width: 20px;
+      height: 30px;
+      background: rgba(0, 0, 0, 0.3);
+      line-height: 30px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .tb-promo .prev {
+      left: 0px;
+      border-radius: 0px 15px 15px 0px;
+    }
+
+    .tb-promo .next {
+      right: 0px;
+      border-radius: 15px 0px 0px 15px;
+    }
+
+    .tb-promo .promo-nav {
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      margin-left: -35px;
+      width: 70px;
+      height: 13px;
+      border-radius: 7px;
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .tb-promo .promo-nav li {
+      float: left;
+      list-style-type: none;
+      width: 8px;
+      height: 8px;
+      background-color: #fff;
+      border-radius: 50%;
+      margin: 3px;
+    }
+
+    .tb-promo .promo-nav .selected {
+      background-color: #ff5000;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="tb-promo">
+    <!-- 图片 -->
+    <img src="images/P238-tb.jpg" alt="">
+    <!-- 左侧小箭头 -->
+    <a href="#" class="prev">&lt</a>
+    <!-- 右侧小箭头 -->
+    <a href="#" class="next">&gt</a>
+    <!-- 小圆点 -->
+    <ul class="promo-nav">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li class="selected"></li>
+      <li></li>
+    </ul>
+  </div>
+</body>
+
+</html>

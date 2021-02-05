@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P248 土豆案例</title>
+  <style>
+    .tudou {
+      position: relative;
+      width: 444px;
+      height: 320px;
+      background-color: pink;
+      margin: 30px auto;
+    }
+
+    .tudou .mask {
+      display: none;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3) url(images/P248-arr.png) no-repeat center;
+    }
+
+    .tudou img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .tudou:hover .mask {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="tudou">
+    <div class="mask"></div>
+    <img src="images/P248-tudou.jpg" alt="">
+  </div>
+</body>
+
+</html>
