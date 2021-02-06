@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>HTML教程练习</title>
+		<link href="css/layout.css" rel="stylesheet" type="text/css">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<style>
+			a:link{text-decoration: none;color: black;}
+			a:hover{text-decoration: underline;color: aqua;}
+			a:visited{text-decoration: none;color: #000000;}
+			.style1{text-align: center;}
+			form{padding: 10px;width:450px;}
+			fieldset{width: 420px;border: 2px ridge #f00;}
+			legend{font-family: 黑体;padding-left:10px;padding-right: 10px;}
+			label{float: left;display:block;width:80px;text-align: right;padding-right: 10px;margin-top:10px;clear:both;}
+			input[type="text"],input[type="password"],input[type="email"],textarea{display: block;margin-top: 10px;}
+			input[type="radio"]{margin:10px;}
+			input[type="submit"]{margin-left: 110px;margin-top: 20px;}
+			
+		</style>
+	</head>
+	<body style="background-color:#6fe6de">
+		<div>
+		<!--标题--><h1 style="font-family: 宋体;text-align: center;"><i>福尔摩斯名言名句</i></h1>
+		<p style="font-family: 隶书;font-size: 20px;color: black;text-align: left;">
+			<ol>
+			<li>在没有得到任何证据的情况下是不能进行推理的，那样的话，只能是误入歧途。</li><br />
+			
+			<li>世上的事都是前人做过的，没什么新鲜的。</li><br />
+			
+			<li>把奇怪和神秘混为一谈是错误的，最最平常的犯罪往往却是最神秘莫测的，因为它没有奇特之处作为推理判断的依据。</li><br />
+			
+			<li>不被人注意的事物，非但不是什么阻碍，反而是一种线索。解决此类问题时，主要运用推理方法，一层层往回推。</li><br />
+			
+			<li>不要让一个人的外表影响你的判断力，这是最重要的。感情会影响理智的。</li><br />
+			
+			<li>我们必须深入生活，只有如此才能获得新奇的效果和非同寻常的配合，而这本身比任何想象都有刺激性。</li><br />
+			
+			<li>通常来说，愈稀奇的事，真相大白后，内情愈平常。而那些非常普通的案件才令人迷惑。</li><br />
+			
+			<li><ins>生活是很枯燥的。我的一生就是力求不要在平庸中虚度光阴。这些小小的案件让我遂了心愿。</ins></li><br />
+			
+			<li><del>不寻常的现象总能给人提供一些线索，而没有什么特征的案子却是难以侦破的。</del></li>
+		    </ol>
+		
+		</p>
+		</div>
+		<pre>
+			<h3><abbr title="1到100的素数"><span style="color: #FF0000;">代码示例：</span></abbr></h3>
+		#include <stdio.h>
+		#include <math.h>
+		int sushu(int a)
+		{
+			int b,c;
+			for(c=2;c<=sqrt(a);c++) 
+			  if(a%c==0)break;
+			if(c>sqrt(a))return 1;
+			else return 0;
+		}
+		int main()
+		{
+			int sushu(int a);
+			int x,z=0;
+			for(x=2;x<=100;x++)
+			{
+			
+				if(sushu(x))
+				{
+					printf("%5d",x);
+					z++;
+				}
+			    if(z%10==0)printf("\n");
+			}
+			return 0;
+		}
+		</pre>
+		
+		<a href="https://baike.baidu.com/item/%E5%93%AA%E5%90%92/23268741" target="_new"><img src="img/index3_img1.jpg" alt="..." width="250" height="350"></a><br />
+		<a href="https://baike.baidu.com/item/%E5%93%AA%E5%90%92/23268741" target="_new" >哪吒</a>
+		<form>
+		<fieldset >
+			<legend>用户登录</legend>
+			<label for="customername">用户名：</label>
+			<input type="text" name="customer" id="customername" >
+			<br />
+			<label for="pword">密码：</label>
+			<input type="password" name="pw" id="pword">
+			<br />
+			<input  type="submit" name="submit" id="submit" value="登录">
+			<input  type="reset" name="reset" id="reset" value="取消">
+		</fieldset>
+		</form>
+	</body>
+</html>
