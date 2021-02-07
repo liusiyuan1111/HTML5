@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P271 布局技巧-CSS三角运用</title>
+  <style>
+    .box {
+      width: 0;
+      height: 0;
+      border-color: transparent teal transparent transparent;
+      border-style: solid;
+      border-width: 100px 50px 0 0;
+    }
+
+    .price {
+      width: 160px;
+      height: 24px;
+      border: 1px solid red;
+      margin: 20px auto;
+      line-height: 24px;
+    }
+
+    .price .ms {
+      position: relative;
+      float: left;
+      width: 90px;
+      height: 100%;
+      background-color: red;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .price .ms i {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 0;
+      height: 0;
+      border-color: transparent #fff transparent transparent;
+      border-style: solid;
+      border-width: 24px 10px 0 0;
+    }
+
+    .price .origin {
+      font-size: 12px;
+      color: gray;
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+  <div class="price">
+    <span class="ms">
+      ￥1650
+      <i></i>
+    </span>
+    <span class="origin">￥5650</span>
+  </div>
+</body>
+
+</html>
