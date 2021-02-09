@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P75 尚硅谷_京东轮播图</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    .img-list {
+      position: relative;
+      width: 590px;
+      height: 470px;
+      margin: 20px auto;
+      /* border: 1px solid red; */
+    }
+
+    .img-list .prev,
+    .img-list .next {
+      position: absolute;
+      top: 50%;
+      margin-top: -15px;
+      width: 25px;
+      height: 35px;
+      background-color: #757575;
+      opacity: 0.5;
+      text-align: center;
+      line-height: 35px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .img-list .prev {
+      left: 0px;
+      border-radius: 0px 18px 18px 0px;
+    }
+
+    .img-list .next {
+      right: 0px;
+      border-radius: 18px 0px 0px 18px;
+    }
+
+    .img-list .prev:hover,
+    .img-list .next:hover {
+      background-color: #424242;
+      opacity: 0.7;
+    }
+
+    .img-list .pointer {
+      position: absolute;
+      bottom: 10px;
+      left: calc(50% - 70px);
+      width: 140px;
+      height: 14px;
+    }
+
+    .img-list .pointer li {
+      float: left;
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      opacity: 0.6;
+      background-clip: content-box;
+      border: 2px solid transparent;
+      border-radius: 50%;
+      margin-right: 4px;
+    }
+
+    .img-list .pointer li:nth-child(8) {
+      margin-right: 0;
+    }
+
+    .img-list .pointer li:hover,
+    .img-list .pointer .active {
+      background-color: #fff;
+      opacity: 1;
+      border: 2px solid rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="img-list">
+    <a href="#" class="prev">&lt;</a>
+    <img id="img" src="images/P75-1.jpg">
+    <ul id="pointer" class="pointer">
+      <li href="" class="active" data-index="0"></li>
+      <li href="" data-index="1"></li>
+      <li href="" data-index="2"></li>
+      <li href="" data-index="3"></li>
+      <li href="" data-index="4"></li>
+      <li href="" data-index="5"></li>
+      <li href="" data-index="6"></li>
+      <li href="" data-index="7"></li>
+    </ul>
+    <a href="#" class="next">&gt;</a>
+  </div>
+
+  <script>
+    // 获取上一张节点id
+    var prev = document.getElementsByClassName('prev')[0]
+    // 获取下一张节点id
+    var next = document.getElementsByClassName('next')[0]
+    // 获取图片节点id
+    var img = document.getElementById('img')
+    // 获取小圆点id
+    var pointer = document.getElementById('pointer')
+    var dot = pointer.getElementsByTagName('li')
+    // console.log(dot)
+    // 定义图片数组
+    var imgArr = ["images/P75-1.jpg", "images/P75-2.jpg", "images/P75-3.jpg", "images/P75-4.jpg", "images/P75-5.jpg", "images/P75-6.jpg", "images/P75-7.jpg", "images/P75-8.jpg"]
+    // 定义下标
+    var index = 0
+
+    const handleDotActive = (index) => {
+      for (var i = 0; i < dot.length; i++) {
+        if (index === i) {
+          dot[i].className = 'active'
+        } else {
+          dot[i].className = ''
+        }
+      }
+    }
+
+    // 上一张
+    const handlePrev = () => {
+      index--
+      if (index < 0) {
+        index = imgArr.length - 1
+      }
+      img.src = imgArr[index]
+      handleDotActive(index)
+    }
+    prev.addEventListener('click', handlePrev)
+
+    // 下一张
+    const handleNext = () => {
+      index++
+      if (index > imgArr.length - 1) {
+        index = 0
+      }
+      img.src = imgArr[index]
+      handleDotActive(index)
+    }
+    next.addEventListener('click', handleNext)
+
+    pointer.addEventListener('click', (e) => {
+      const currentIndex = e.target.dataset.index
+      const childrens = pointer.children
+      console.log(childrens)
+      for (let i = 0; i < childrens.length; i++) {
+        // console.log(childrens[index].dataset.index)
+        if (currentIndex === childrens[i].dataset.index) {
+          img.src = imgArr[i]
+          index = i
+          handleDotActive(index)
+        }
+      }
+    })
+
+    // 自动播放
+    let timer
+    const autoPlay = () => {
+      clearTimeout(autoPlay)
+      handleNext()
+      timer = setTimeout(autoPlay, 2000)
+    }
+    setTimeout(autoPlay, 2000)
+
+    img.addEventListener('mousemove', () => {
+      clearTimeout(timer)
+    })
+
+    img.addEventListener('mouseout', () => {
+      clearTimeout(timer)
+      autoPlay()
+    })
+  </script>
+</body>
+
+</html>
