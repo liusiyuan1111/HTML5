@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<link href="layout.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+			[title]{color: cadetblue;font-size: 25px;}
+			[title=w3school]{border: 5px solid #0000FF;}
+			[title~=hi]{font-size:20px;color: #b726ff;}
+			[lang|=en]{font-size:20px;color:palevioletred;}
+			input[type="text"]{width:150px;display:block;margin-bottom:10px;
+			     background-color: #5F9EA0;}
+		    input[type="button"]{width:120px;margin-left:35px;display:block;}
+			table,th{border:1px solid blue;}
+			th{text-align: right;background-color: #5F9EA0;color: #FFFFFF;}
+			a img{border-style: outset;}
+		</style>
+	</head>
+	<body>
+		<h1 class="h1">标题1</h1>
+		<h2 class="h2">标题2</h2>
+		<h3 class="h3">标题3</h3>
+		<ul>
+		<li class="li"><strong>斜体字</strong></li>
+		<li>正常字</li>
+		</ul>
+		<p><strong>加粗字</strong></p>
+		<h2 class="h2">The color is <strong>blue</strong>.</h2>
+		<h2 class="h1">The color is <strong>red</strong>.</h2>
+		<p id="red">这个是红色的。</p>
+		<p id="blue">这个是蓝色的。</p>
+		<p id="blue">这个套用上面蓝色的样式。不是用不了，而是不能用。只能有有一个id。</p>
+		<sidebar id="sidebar"><p>sidebar工具栏<br/>
+		 1、id 属性只能在每个 HTML 文档中出现一次<br/>
+		 2、即使被标注为 sidebar 的元素只能在文档中出现一次，<br/>
+		 这个 id 选择器作为派生选择器也可以被使用很多次；</p></sidebar>
+		 <sidebar id="sidebar"><h2>lalalalalalalxixixixixi<br/>
+		 黑红2个斜体都是用的id="sidebar"</h2></sidebar><hr/>
+		 <h1 class="center">收敛</h1>
+		 <p class="center">你总是十分收敛，保留着天真一点，恰好有分寸的告别。<br/>
+		 最初的回忆还是太远，谁能在谁身边等到一个永远。</p>
+		 <p>title可以应用的样式:</p>
+		 <p title="Hellow world">Hellow world</p>
+		 <img title="w3school" src="images/1.jpg"/>
+		 <a title="w3school" href="https://www.w3school.com.cn/css/css_syntax_attribute_selector.asp">给title=**名一个名，设置样式。</a>
+		 <p title="hi">hi,my name is li shuji.</p>
+		 <p title="hi">hihihihihihihi,~省略了很多字体，只要要表达的字体里出现title~=后面的内容就🆗。</p>
+		 <p lang="en">温柔懒懒的海风 吹到高高的山峰</p>
+		 <p lang="en-xixixi">温的风 山的风 吹成了山风</p>
+		 <p lang="en-hahah">lang="*"是要代用的时候用的，css里面写lang|=*，代用的时候可以写lang="*-xxxx"</p>
+		 <p>之前的：</p>
+		 邮箱框<input type="email" name="myemail" id="email" value="email"><br/>
+		 密码框<input type="password" name="pw" id="pword" value="password"><br/>
+		 <p>用[]的:</p>
+		 <input type="text" name="name" value="happy" size="20">
+		 <input type="text" name="name" value="sad" size="20">
+		 <input type="button" value="submit"><hr/>
+		 <p class="p1">皮卡丘——皮卡皮卡</p>
+		 <p class="p2">你今天真好看</p>
+		 <p>图片链接</p>
+	     <a href="https://baidu.com"><img src="images/3.jpg"></a>
+	     <p class="p3">:) :)</p>
+		 <p>background-position:50%(左) 50%(右)</p>
+		 <p class="p4">小松菜奈</p>
+		 <p class="p5">把 Web 页面上的段落的第一行缩进，这是一种最常用的文本格式化效果。
+		 CSS 提供了 text-indent 属性，该属性可以方便地实现文本缩进。
+         通过使用 text-indent 属性，所有元素的第一行都可以缩进一个给定的长度，甚至该长度可以是负值。
+         这个属性最常见的用途是将段落的首行缩进，下面的规则会使所有段落的首行缩进 5 em：</p>
+         <p class="p5">注意：一般来说，可以为所有块级元素应用 text-indent，但无法将该属性应用于行内元素，
+		 图像之类的替换元素上也无法应用 text-indent 属性。
+		 不过，如果一个块级元素（比如段落）的首行中有一个图像，它会随该行的其余文本移动。</p>
+         <p class="p5"><img src="images/5.jpg">注意：一般来说，可以为所有块级元素应用 text-indent，但无法将该属性应用于行内元素，
+		 图像之类的替换元素上也无法应用 text-indent 属性。
+		 不过，如果一个块级元素（比如段落）的首行中有一个图像，它会随该行的其余文本移动。</p>
+		 <p class="p61">text-indent 还可以设置为负值。利用这种技术，可以实现很多有趣的效果，
+		 比如“悬挂缩进”，即第一行悬挂在元素中余下部分的左边.</p>
+		 <p class="p62">不过在为 text-indent 设置负值时要当心，如果对一个段落设置了负值，
+		 那么首行的某些文本可能会超出浏览器窗口的左边界。
+		 为了避免出现这种显示问题，建议针对负缩进再设置一个外边距或一些内边距：</p>
+		 <p>这是没有设任何东西时候的状态。（好像和上面设了东西的时候一样？嗯嗯嗯）</p>
+		 <div class="div"><p class="p">使用百分数缩进</p></div>
+		 <p class="p7">即使身边世事再毫无道理 与你永远亦连在一起</p>
+		 <p class="p8">与你永远亦连在一起 你不放下我 我不放下你 我想确定每日挽住同样的手臂</p>
+		 <p class="p9">不敢早死要来陪住你 我已试够别离并不很凄美</p>
+		 <p class="p10">(————加了水平对齐justify—————)风浪没平息 我宣告奔跑的意义 这不是叛逆 我只是淋了一场雨
+            没怀疑 燃烧的梦都飞哪去 问自己 这次我不会放弃
+            窗外的天空已经开始逐渐泛白 你带着满肚子的心事发呆 还是没睡
+            是否真的把一手好牌打成了烂牌 你不想钻牛角尖 可总忍不住去回味
+            独自消化那些讥讽已经成为常态 不是不想说只是没准备好要坦白
+            尽管家人的不理解让你束手无策 但仍在歌词安慰自己“你要的都在赶来”</p>
+        <p class="p11">(————没加水平对齐justify—————)风浪没平息 我宣告奔跑的意义 这不是叛逆 我只是淋了一场雨
+            没怀疑 燃烧的梦都飞哪去 问自己 这次我不会放弃
+            窗外的天空已经开始逐渐泛白 你带着满肚子的心事发呆 还是没睡
+            是否真的把一手好牌打成了烂牌 你不想钻牛角尖 可总忍不住去回味
+            独自消化那些讥讽已经成为常态 不是不想说只是没准备好要坦白
+            尽管家人的不理解让你束手无策 但仍在歌词安慰自己“你要的都在赶来”</p>
+        <p>This is the king.</p>
+        <p class="p12">This is the king.</p>
+		<p class="p13">This is the king.</p>
+		<p>The word is beautiful.</p>
+        <p class="uppercase">The word is beautiful.</p>
+		<p class="lowercase">The word is beautiful.</p>
+		<p class="capitalize">The word is beautiful.</p>
+		<p class="line">偏偏秉烛夜游 午夜星辰 似奔走之友</p>
+		<p class="line2">偏偏秉烛夜游 午夜星辰 似奔走之友</p>
+        <p class="line3">(————没有blind啊？————)偏偏秉烛夜游 午夜星辰 似奔走之友</p>
+		<p>当你的眼睛眯着笑 当你喝可乐当你吵</p>
+		<p class="italic">当你的眼睛眯着笑 当你喝可乐当你吵xixixixixixi</p>
+        <p class="oblique">当你的眼睛眯着笑 当你喝可乐当你吵xixixixixixi
+		斜体（italic）是一种简单的字体风格，对每个字母的结构有一些小改动，来反映变化的外观。
+		与此不同，倾斜（oblique）文本则是正常竖直文本的一个倾斜版本。
+        通常情况下，italic 和 oblique 文本在 web 浏览器中看上去完全一样。</p>
+		<p class="small">There have some apples.</p>
+		<div class="weight">平平安安</div>
+		<div class="weight3">平平安安</div>
+		<div class="weight1">平平安安</div>
+		<div class="weight2">平平安安</div>
+		<ul class="ul1">
+			<li>苹果</li>
+			<li>梨子</li>
+			<li>橙子</li>
+			<li>橄榄</li>
+		</ul>
+		<ul class="ul">
+			<li>苹果</li>
+			<li>梨</li>
+			<li>橙子</li>
+			<li>橄榄</li>
+		</ul>
+		<table>
+			<tr><th>Firstname</th><th>Lastname</th></tr>
+			<tr><th>小红</th><th>小蓝</th></tr>
+			<tr><th>小绿</th><th>小黑</th></tr>
+		</table>
+        <p class="p14">秋风落日入长河 江南烟雨行舟</p>
+        <a href="https://baidu.com" target="_blank"><img src="images/7.jfif"></a><hr/>
+        <div class="kk1"></div>
+		<div class="kk2"></div>
+		<div class="kk3"></div>
+		<p class="cleanfloat">我愿变成一颗恒星 守护海底的蜂鸣 It's my dream it's magic
+        照亮你的心 To your eyes 有多远的距离 穿过人海 别停下来 我愿变成一颗恒星 守护海底的蜂鸣
+        It's my dream it's magic 照亮你的心 To your eyes 有多远的距离</p><hr/>
+		<div class="kk1"></div>
+		<div class="kk4"></div>
+		<div class="kk3"></div>
+		<p class="cleanfloat">我愿变成一颗恒星 守护海底的蜂鸣 It's my dream it's magic
+		照亮你的心 To your eyes 有多远的距离 穿过人海 别停下来 我愿变成一颗恒星 守护海底的蜂鸣
+		It's my dream it's magic 照亮你的心 To your eyes 有多远的距离</p><hr/>
+		<!-------------------------------------------照片------------------------------->
+		<div class="img1">
+			<a href="images/9.jpg" target="_blank">
+			<img src="images/9.jpg">
+			</a>
+			<div class="desc">奇奇迪迪</div>
+		</div>
+		<div class="img1">
+			<a href="images/10.png" target="_blank">
+			<img src="images/10.png">
+			</a>
+			<div class="desc">奇奇迪迪</div>
+		</div>
+		<div class="img1">
+			<a href="images/11.jpg" target="_blank">
+			<img src="images/11.jpg">
+			</a>
+			<div class="desc">奇奇迪迪</div>
+		</div> 
+       <div class="img1">
+       	<a href="images/12.jpg" target="_blank">
+       	<img src="images/12.jpg">
+       	</a>
+		<div class="desc">奇奇迪迪</div>
+       </div>
+	   <div class="cleanfloat"></div><hr/>
+		
+		<!------------------------------图片变色------------------------------------>
+		<div class="img"><img src="images/13.jpg"></div>
+		
+		<div class="img2">
+			<div class="img3">
+			<p class="p15">为了她 又再勉强去谈天论爱 又再振作去慰解他人 如难复合便尽早放开 凡事看开
+            又再讲 没有情人时还可自爱 忘掉或是为自己感慨 笑住说沉沦那些苦海 会有害
+            因为我坚强到利用自己的痛心 转换成爱心 抵我对她操心 已记不起我也有权利爱人</p>
+            </div>
+		</div>
+
+
+
+
+
+
+	
+			
+		
+		
+    </body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+	
