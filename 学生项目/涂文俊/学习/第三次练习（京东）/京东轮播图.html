@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>京东轮播图</title>
+		    <style type="text/css">
+				*{
+					margin: 0px;
+					padding: 0px;
+				}
+				li{
+					list-style-type: none;
+					padding: 0px;
+					margin: 0px;
+				}
+				ul{
+					padding: 0px;
+					margin: 0px;
+				}
+		        .img-list{
+		            width: 590px;
+		            height: 470px;
+		            margin: 100px auto;
+					overflow: hidden;
+		            position: relative;
+		
+		        }
+		        .img-list li{
+		            position: absolute;
+		        }
+		
+		        /* 通过修改元素的层级来显示指定的图片 */
+		        .img-list li:nth-child(4){
+		            z-index: 1;
+		        }
+		
+		        /* 设置导航点的样式 */
+		        .pointer{
+		            position: absolute;
+		            z-index: 9999;
+		            bottom: 20px;
+		            left: 40px;
+		        }
+		
+		        .pointer a{
+					background-color: red;
+		            float: left;
+		            width: 10px;
+		            height: 10px;
+		            margin: 0px 2px;
+		            border-radius: 50%;
+		            background-color: rgba(255, 255, 255, .3);
+		            background-clip: content-box;
+		            border: 2px solid transparent;
+		        }
+		
+		        .pointer a.active,
+		        .pointer a:hover{
+		            background-color: #fff;
+		            border: 2px solid  rgba(255, 255, 255, .3);
+		        }
+		
+		
+		    </style>
+		</head>
+		<body>
+		    <ul class="img-list">
+		        <li><a href="javascript:;"><img src="img/1.jpg"></a></li>
+		        <li><a href="javascript:;"><img src="img/2.jpg"></a></li>
+		        <li><a href="javascript:;"><img src="img/3.jpg"></a></li>
+		        <li><a href="javascript:;"><img src="img/4.jpg"></a></li>
+		        <li><a href="javascript:;"><img src="img/5.jpg"></a></li>
+		        <li><a href="javascript:;"><img src="img/6.jpg"></a></li>
+		        <li><a href="javascript:;"><img src="img/7.jpg"></a></li>
+		        <li><a href="javascript:;"><img src="img/8.jpg"></a></li>
+		
+		        <div class="pointer">
+		            <a class="active" href="javascript:;"></a>
+		            <a href="javascript:;"></a>
+		            <a href="javascript:;"></a>
+		            <a href="javascript:;"></a>
+		            <a href="javascript:;"></a>
+		            <a href="javascript:;"></a>
+		            <a href="javascript:;"></a>
+		            <a href="javascript:;"></a>
+		        </div>
+		    </ul>
+		</body>
+		</html>

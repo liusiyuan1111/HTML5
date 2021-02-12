@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>案例3-京东导航条</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    @font-face {
+      font-family: 'icomoon';
+      src: url('fonts/icomoon.eot?tfwvra');
+      src: url('fonts/icomoon.eot?tfwvra#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?tfwvra') format('truetype'),
+        url('fonts/icomoon.woff?tfwvra') format('woff'),
+        url('fonts/icomoon.svg?tfwvra#icomoon') format('svg');
+      font-weight: normal;
+      font-style: normal;
+      font-display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: #999;
+    }
+
+    a:hover {
+      color: #f10215;
+    }
+
+    a.active {
+      color: #f10215;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    .top-nav-wrap {
+      width: 100%;
+      height: 30px;
+      background-color: #E3E4E5;
+    }
+
+    .top-nav-wrap .top-nav {
+      width: 1200px;
+      height: 100%;
+      margin: 0 auto;
+      line-height: 30px;
+      font-size: 12px;
+    }
+
+    .top-nav-wrap .top-nav .location {
+      position: relative;
+      float: left;
+    }
+
+    .location .current-city {
+      padding: 0 10px;
+      position: relative;
+      z-index: 999;
+      box-sizing: border-box;
+      border: 1px solid transparent;
+    }
+
+    .current-city span {
+      font-family: 'icomoon';
+      font-size: 12px;
+      color: #f10215;
+    }
+
+    .location .city-list {
+      display: none;
+      position: absolute;
+      top: 30px;
+      width: 300px;
+      height: 400px;
+      background-color: #fff;
+      border: 1px solid rgb(204, 204, 204);
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .location:hover .city-list {
+      display: block;
+    }
+
+    .location:hover .current-city {
+      background-color: #fff;
+      border: 1px solid rgb(204, 204, 204);
+      border-bottom: none;
+    }
+
+    .top-nav-wrap .top-nav .shortcut {
+      float: right;
+    }
+
+    .shortcut li {
+      float: left;
+    }
+
+    .shortcut .line {
+      width: 1px;
+      height: 10px;
+      background-color: rgb(204, 202, 202);
+      margin: 10px 10px;
+    }
+
+    .shortcut li span {
+      font-family: 'icomoon';
+      font: 12px;
+      line-height: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-nav-wrap">
+    <div class="top-nav">
+      <div class="location">
+        <div class="current-city">
+          <span></span>
+          <a href="#">海丰</a>
+        </div>
+        <div class="city-list"></div>
+      </div>
+      <ul class="shortcut">
+        <li>
+          <a href="#">你好，请登录</a>
+          <a href="#" class="active">免费注册</a>
+        </li>
+        <li class="line"></li>
+        <li>
+          <a href="#">我的订单</a>
+        </li>
+        <li class="line"></li>
+        <li>
+          <a href="#">我的京东</a>
+          <span></span>
+        </li>
+        <li class="line"></li>
+        <li>
+          <a href="#">京东会员</a>
+        </li>
+        <li class="line"></li>
+        <li>
+          <a href="#" class="active">企业采购</a>
+          <span></span>
+        </li>
+        <li class="line"></li>
+
+        <li>
+          <a href="#">客户服务</a>
+          <span></span>
+        </li>
+        <li class="line"></li>
+
+        <li>
+          <a href="#">网站导航</a>
+          <span></span>
+        </li>
+        <li class="line"></li>
+
+        <li>
+          <a href="#">手机京东</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
