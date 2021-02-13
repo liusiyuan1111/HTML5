@@ -1,0 +1,13 @@
+@charset "utf-8";
+#container{width: 1000px;margin: auto;}
+header{background-image: url(../img/bj1.jpg);height: 150px;width: 1000px;margin: auto;}
+main{background-image: url(../img/bj2.gif);height: 1000px;width: 1000px;margin: auto;}
+footer{background-color: antiquewhite;height: 50px;width: 1000px;margin: auto;}
+#left_side1{background-image: url(../img/n4.png);height: 1000px;width: 490px;float: left;border: 1px solid black;}
+#right_side1{background-color:white;height: 1000px;width: 500px;float: right;border: 1px solid black;}
+nav{height: 25px;width:550px;margin-left: 190px;}
+#nav1 ul{margin:-25px auto 0px auto;width:550px;}
+#nav1 ul li{float: left;list-style-type: none;display: block;}
+#nav1 ul li a:link,#nav1 ul li a:visited{background-color:black;color:white;text-decoration: none;width: 110px;height: 25px;line-height: 25px;
+text-align: center;display: block;float: left;}
+#nav1 ul li a:hover{text-decoration: none;background-color: aqua;color: #0000FF;}
