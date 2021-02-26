@@ -60,3 +60,45 @@
        opacity:0.6;filter: alpha(opacity=60);}
 .p15{margin:20px 10px;}
 
+
+
+/*************************************css3******************************************/
+.yy1{width:200px;background-color: #2E8B57;border-radius:25px;height:30px;
+     text-align: center;}
+.yy2{width:280px;height:80px;background-color:#ff9900;
+     box-shadow:10px 10px 10px #888888;}
+.yy3{background-image: url(images/10.png);background-repeat: no-repeat;
+     background-size:80px 150px;}
+.yy4{background-image: url(images/10.png);background-repeat: no-repeat;
+     background-size:28% 80%;}
+.yy5{width:8em; border:1px solid #000000;word-wrap:break-word;}
+.yy6{border:1px solid #000000;word-wrap:break-word;}
+.yy7{width:200px;height:30px;background-color: #B726FF;transform:rotate(12deg);}
+.yy8{width:100px;height:150px;background-color: #5F9EA0;border:1px solid black;}
+.yy9{width:100px;height:150px;background-color: #5F9EA0;border:1px solid black;
+     transform:translate(50px,100px);}
+.yy10{width:100px;height:150px;background-color: #5F9EA0;border:1px solid black;
+     margin:100px;transform:scale(2,4);}
+.yy11{width:100px;height:150px;background-color: #5F9EA0;border:1px solid black;
+     transform:skew(30deg,20deg);}
+.yy_3d1{width:100px;height:150px;background-color: #5F9EA0;border:1px solid black;
+       transform:rotateX(120deg);}
+.yy_3d2{width:100px;height:100px;background:yellow;transition:width 2s;}
+.yy_3d2:hover{width:500px;height:100px;background:yellow;transition:width 2s;}
+.yy_3d3{width:100px;height:100px;background:yellow;transition:width 2s, height 2s;}
+.yy_3d3:hover{width:200px;height:200px;transform:rotate(180deg);} 
+.yy12{width:100px;height:100px;background:red;animation:myfirst 5s;}
+      @keyframes myfirst{
+		                 from{background:red;}
+	                     to{background:yellow;}
+						 }
+.yy13{width:100px;height:100px;background:red;animation:mysecond 5s;}
+     @keyframes mysecond{
+		                 0%{background:red;}
+     	                 25%{background:yellow;}
+						 50%{background:blue;}
+						 100%{background:green;}
+                         }
+     	
+
+	
