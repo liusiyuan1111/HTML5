@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('../font/iconfont.woff2') format('woff2'),
+      url('../font/iconfont.woff') format('woff'),
+      url('../font/iconfont.ttf') format('truetype'),
+      url('../font/iconfont.svg#iconfont') format('svg');
+}
+.shop-car span {
+  font-family: 'iconfont';
+  font-size: 16px;
+  margin-right: 4px;
+}
+.left-menu span {
+  font-family: 'iconfont';
+  font-size: 16px;
+  font-weight: 700;
+}
+.search-btn span {
+  font-family: 'iconfont';
+  font-size: 20px;
+  font-weight: 700;
+}
+.shortcut span {
+  font-family: 'iconfont';
+  display: block;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
