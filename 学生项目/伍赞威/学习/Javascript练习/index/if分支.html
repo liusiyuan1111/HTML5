@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var user = prompt("请输入账号")
+    var password = prompt("请输入密码");
+    if(user == 123456 && password == 456789){
+        document.write("登陆成功")
+    }else if(user == 123456 && password != 456789){
+        document.write("密码错误")
+    }else if(user != 123456 && password == 456789){
+        document.write("账号错误")
+    }else{
+        document.write("该用户不存在")
+    }
+    // 20120250133伍赞威
+</script>
+<body>
+    
+</body>
+</html>
