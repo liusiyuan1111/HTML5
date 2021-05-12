@@ -1,0 +1,46 @@
+@charset "utf-8";
+#container{
+	width: 1000px;
+	height: 1200px;
+	margin: auto;
+	margin-top: 100px;
+	border: black solid 10px;
+	border-radius: 5px;
+	box-shadow: 10px 10px 15px #9d9d9d;
+	border-image: url(../img/border.png) 30 30 round;
+	background: url(../img/bg_flower.gif);
+	background-size: 50px 100px;
+	transform: rotate(10deg);
+	-webkit-transform: rotate(10deg);
+}
+#con1{
+	width: 100px;
+	height: 100px;
+	background-image: linear-gradient(240deg,#e940ff,#57dbe7);
+	transition: width 2s,height 2s,transform 2s;
+	-moz-transition:width 2s, height 2s, -moz-transform 2s; /* Firefox 4 */
+	-webkit-transition:width 2s, height 2s, -webkit-transform 2s; /* Safari and Chrome */
+	-o-transition:width 2s, height 2s, -o-transform 2s; /* Opera */
+	margin: auto;
+}
+#con1:hover{
+	width: 200px;
+	height: 200px;
+	background-image: linear-gradient(240deg,#57dbe7,#e940ff);
+	transform: rotate(180deg);
+	-moz-transform:rotate(180deg); /* Firefox 4 */
+	-webkit-transform:rotate(180deg); /* Safari and Chrome */
+	-o-transform:rotate(180deg); /* Opera */
+	
+}
+.style{
+	color: red;
+	font-size: 100px;
+	text-align: center;
+	text-shadow: 10px 10px 5px #000000;
+	font-family: "宋体","微雅软宋","楷体";
+}
+p{
+	word-wrap: break-word;
+	font-family: "宋体","微雅软宋","楷体";
+}

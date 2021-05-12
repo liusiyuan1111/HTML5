@@ -2,3 +2,10 @@
 #blue{color:blue;}
 #sidebar p{font-size: 18px;font-style:italic;line-height:35px;}
 #sidebar h2{font-size: 18px;font-style:italic;line-height:35px;color:orangered;}
+
+
+/**************************************css3*************************************/
+#div1{width:100px;height:75px;background-color:chocolate;border:1px solid black;}
+#div2{width:100px;height:75px;background-color:chocolate;border:1px solid black;
+      transform:rotate(30deg);}
+#div3{width:200px;height:150px;background-color: white;}

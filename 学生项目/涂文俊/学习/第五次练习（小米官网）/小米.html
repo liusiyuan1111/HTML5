@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.w{			/* 固定容器的宽度 */
+			    width: 1226px;
+			    margin: 0 auto;
+			}
+			a{
+			    text-decoration: none;
+			    color: #333;
+			}
+			body{
+			    color: #333;
+			    min-width: 1226px;
+			}
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			li{
+				list-style-type: none;
+				padding: 0px;
+				margin: 0px;
+			}
+			ul{
+				padding: 0px;
+				margin: 0px;
+			}
+			/* 主页index.html的样式表 */
+			
+			/* 顶部导航条的容器 */
+			.topbar-wrapper{
+			    width: 100%;
+			    height: 40px;
+			    line-height: 40px;
+			    background-color: #333;
+			}
+			.topbar a{
+			    font-size: 12px;
+			    color: #b0b0b0;
+			    display: block;
+			}
+			
+			.topbar a:hover{
+			    color: #fff;
+			}
+			
+			.topbar .line{
+			    font-size: 12px;
+			    color: #424242;
+			    margin: 0 8px;
+			}
+			
+			/* 设置左侧导航栏 */
+			.service, .topbar li{
+			    float: left;
+			}
+			.app{
+			    position: relative;
+			}
+			/* 设置app下的小三角 */
+			.app::after{
+			    content: '';
+			    display: none;
+			    position: absolute;
+			    width: 0;
+			    height: 0;
+			    /* 设置四个方向的边框 */
+			    border: 8px solid transparent;
+			    /* 去除上边框 */
+			    border-top: none;
+			    /* 单独设置下边框的颜色 */
+			    border-bottom-color: #fff;
+			    bottom: 0;
+			    left: 0;
+			    right: 0;
+			    margin:auto;
+			}
+			
+			.app:hover .qrcode,
+			.app:hover::after{
+			    display: block;
+			    height: 148px;
+			}
+			/* 设置下载app的下拉 */
+			.app .qrcode{
+			    position: absolute;
+			    left: -40px;
+			    width: 124px;
+			    height: 0;
+			    overflow: hidden;
+			    line-height: 1;
+			    text-align: center;
+			    background-color: #fff;
+			    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+			    transition: height 0.3s;
+			    z-index: 9999;
+			}
+
+			.app .qrcode img{
+			    width: 90px;
+			    margin: 17px;
+			    margin-bottom: 10px;
+			} 
+			.app .qrcode span{
+			    font-size: 14px;
+			    color: #000;
+			}
+			
+			/* 设置右侧导航栏 */
+			.shop-cart, .user-info{
+			    float: right;
+			}
+			
+			.shop-cart{
+			    margin-left: 26px;
+			}
+			.shop-cart a{
+			    width: 120px;
+			    background-color: #424242;
+			    text-align: center;
+			}
+			
+			.shop-cart:hover a{
+			    background-color: #fff;
+			    color: #FF6700;
+			}
+			
+			.shop-cart i{
+			    margin-right: 2px;
+			}
+			
+			.header-wrapper{
+			    position: relative;
+			}
+			.header{
+			    height: 100px;
+			}
+			.header .logo{
+			    float: left;
+			    margin-top: 22px;
+			    width: 55px;
+			    height: 55px;
+			    position: relative;
+			    overflow: hidden;
+			    text-indent: -9999px
+			}
+			.header .logo a{
+			    position: absolute;
+			    width: 55px;
+			    height: 55px;
+			    left: 0;
+			    background-color: #FF6700;
+			    background-image: url(img/mi-logo.png);
+			    background-position: center;
+			    transition: left 0.3s;
+			}
+			.header .logo .home{
+			    background-image: url(img/mi-home.png);
+			    left: -55px;
+			}
+			.header .logo:hover .mi{
+			    left: 55px;
+			}
+			
+			.header .logo:hover .home{
+			    left: 0;
+			}
+			.header .nav-wrapper{
+			    float: left;
+			    margin-left: 7px;
+			}
+			.header .nav{
+			    /* width: 792px; */
+			    height: 100px;
+			    line-height: 100px;
+			    padding-left: 58px;
+			}
+			.nav > li{
+			    float: left;
+			}
+			
+			.all-goods-wrapper{
+			    position: relative;
+			}
+			.left-menu{
+			    width: 234px;
+			    height: 420px;
+			    padding: 20px 0;
+			    background-color: rgba(0, 0, 0, .6);
+			    position: absolute;
+			    z-index: 999;
+			    left: -120px;
+			    line-height: 1;
+			
+			}
+			ul.left-menu li a{
+			    display: block;
+			    height: 42px;
+			    line-height: 42px;
+			    color: white;
+			    margin-right: 0;
+			    padding: 0 30px;
+			    font-size: 14px;
+			}
+			ul.left-menu li a:hover{
+			    color: white;
+			    background-color: #FF6700;
+			}
+			
+			.left-menu a i{
+			    float: right;
+			    line-height: 42px;
+			}
+			.nav-wrapper li a{
+			    display: block;
+			    font-size: 16px;
+			    margin-right: 20px;
+			}
+			.nav-wrapper li a:hover{
+			    color: #FF6700;
+			}
+			.all-goods{
+			    visibility: hidden;
+			}
+			
+			.nav .goods-info{
+			    height: 0;
+			    overflow: hidden;
+			    width: 100%;
+			    background-color: #fff;
+			    position: absolute;
+			    top: 100px;
+			    left: 0;
+			    transition: height 0.3s;
+			    z-index: 9999;
+			}
+			.nav .show-goods:hover ~ .goods-info,
+			.goods-info:hover {
+			    height: 228px;
+			    border-top: 1px solid rgb(224, 224, 224);
+			    box-shadow: 0 5px 3px rgba(0, 0, 0, .2);
+			}
+			.search-wrapper{
+			    width: 296px;
+			    height: 50px;
+			    float: right;
+			    margin-top: 25px;
+			}
+			
+			.search-wrapper .search-inp{
+			    box-sizing: border-box;
+			    width: 244px;
+			    border: none;
+			    float: left;
+			    padding: 0 10px;
+			    height: 50px;
+			    font-size: 16px;
+			    border: 1px solid rgb(224, 224, 224);
+			    outline: none;
+			}
+			.search-wrapper .search-inp:focus,
+			.search-wrapper .search-inp:focus + button{
+			    border-color: #FF6700;
+			}
+			.search-wrapper .search-btn{
+			    float: left;
+			    height: 50px;
+			    width: 52px;
+			    padding: 0;
+			    border: none;
+			    background-color: #fff;
+			    color: #616161;
+			    font-size: 16px;
+			    border: 1px solid rgb(224, 224, 224);
+			    border-left: none;
+			}
+			.search-wrapper .search-btn:hover{
+			    background-color: #FF6700;
+			    color: white;
+			    border: none;
+			}
+			.banner{
+			    position: relative;
+			    height: 460px;
+			}
+			
+			.banner .img-list li{
+			    position: absolute;
+			}
+			.banner img{
+			    width: 100%;
+			    vertical-align: top;
+			}
+			/* 设置5个导航点 */
+			.pointer{
+			    position: absolute;
+			    bottom: 22px;
+			    right: 35px;
+			}
+			
+			.pointer a{
+			    float: left;
+			    width: 6px;
+			    height: 6px;
+			    border: 2px rgba(255, 255, 255, .4) solid;
+			    border-radius: 50%;
+			    background-color: rgba(0, 0, 0, .4);
+			    margin-left: 6px;
+			}
+			
+			.pointer a:hover,
+			.pointer a.active{
+			    border-color: rgba(0, 0, 0, .4);
+			    background-color:rgba(255, 255, 255, .4);
+			}
+			
+			/* 设置两个箭头 */
+			.prev-next a{
+			    width: 41px;
+			    height: 69px;
+			    background-image: url(../img/icon-slides.png);
+			    position: absolute;
+			    top: 0;
+			    bottom: 0;
+			    margin: auto 0;
+			}
+			
+			.prev-next .prev{
+			    left: 234px;
+			    background-position: -84px 0;
+			}
+			
+			.prev-next .prev:hover{
+			    background-position: 0 0;
+			}
+			
+			.prev-next .next{
+			    right: 0;
+			    background-position: -125px 0;
+			}
+			
+			.prev-next .next:hover{
+			    background-position: -42px 0;
+			}
+			
+			/* 设置回到顶部的元素 */
+			.back-top{
+			    width: 26px;
+			    height: 206px;
+			    background-color: orange;
+			    /* 开启固定定位 */
+			    position: fixed;
+			    bottom: 60px;
+			    right: 50%; /*将right值设置为视口宽度的50%*/
+			    margin-right: -639px;
+			}
+
+			.ad{
+			    height: 170px;
+			    margin-top: 14px;
+			}
+			
+			.ad .shortcut,
+			.ad .imgs,
+			.ad li{
+			    float: left;
+			}
+			.ad .shortcut{
+			    width: 228px;
+			    height: 168px;
+			    background-color: #5f5750;
+			    margin-right: 14px;
+			    padding-top: 2px;
+			    padding-left: 6px;
+			}
+			.ad .shortcut li{
+			    position: relative;
+			}
+			
+			/* 设置上边框 */
+			.ad .shortcut li::before{
+			    content: '';
+			    position: absolute;
+			    width: 64px;
+			    height: 1px;
+			    background-color: #665e57;
+			    left: 0;
+			    right: 0;
+			    top: 0;
+			    margin: 0 auto
+			}
+			
+			/* 设置左边框 */
+			.ad .shortcut li::after{
+			    content: '';
+			    position: absolute;
+			    height: 70px;
+			    width: 1px;
+			    background-color: #665e57;
+			    top: 0;
+			    bottom: 0;
+			    margin: auto 0;
+			    left: 0;
+			
+			}
+			.ad .shortcut a{
+			    display: block;
+			    color: #cfccca;
+			    height: 84px;
+			    width: 76px;
+			    text-align: center;
+			    font-size: 12px;
+			    overflow: hidden;
+			}
+			
+			.ad .shortcut a:hover{
+			    color: #fff;
+			}
+			.ad .shortcut i{
+			    display: block;
+			    margin-top: 20px;
+			    margin-bottom: 6px;
+			    font-size: 20px;
+			}
+			.ad .imgs li{
+			    width: 316px;
+			    margin-right:15px; 
+			}
+			
+			.ad .imgs li:last-child{
+			    margin: 0;
+			}
+			
+			.ad .imgs img{
+			    width: 100%;
+			    vertical-align: top;
+			}
+		</style>
+	</head>
+	<body>
+	
+	    <!-- 导航栏 -->
+	    <div class="topbar-wrapper">
+	        <div class="topbar w clearfix">
+	            <!-- 左侧导航 -->
+	            <ul class="service">
+	                <li><a href="javascript:;">小米商城</a></li>
+	                <li class="line">|</li>
+	                <li><a href="javascript:;">MIUI</a></li>
+	                <li class="line">|</li>
+	                <li><a href="javascript:;">loT</a></li>
+	                <li class="line">|</li>
+	                <li><a href="javascript:;">云服务</a></li>
+	                <li class="line">|</li>
+	                <li><a href="javascript:;">金融</a></li>
+	                <li class="line">|</li>
+	                <li><a href="javascript:;">有品</a></li>
+	                <li class="line">|</li>
+	                <li><a href="javascript:;">小爱开放平台</a></li>
+	                <li class="line">|</li>
+	                <li><a href="javascript:;">企业团购</a></li>
+	                <li class="line">|</li>
+	                <li><a href="javascript:;">资质证照</a></li>
+	                <li class="line">|</li>
+	                <li><a href="javascript:;">协议规则</a></li>
+	                <li class="line">|</li>
+	                <li class="app-wrapper">
+	                    <a class="app" href="javascript:;">
+	                        下载app
+	                        <!-- 添加一个弹出层 -->
+	                        <div class="qrcode">
+	                            <img src="./img/download.png">
+	                            <span>小米商城app</span>
+	                        </div>
+	                    </a>
+	                </li>
+	                <li class="line">|</li>
+	                <li><a href="javascript:;">Select Location</a></li>
+	            </ul>
+	            <ul class="shop-cart">
+	                <li><a href="javascript:;">
+	                        <!-- <i>用于放图片字体 -->
+							<i class="fas"></i>
+	                        购物车（0）
+	                    </a></li>
+	            </ul>
+	
+	            <ul class="user-info">
+	                <li><a href="javascript:;">登录</a></li>
+	                <li class="line">|</li>
+	                <li><a href="javascript:;">注册</a></li>
+	                <li class="line">|</li>
+	                <li><a href="javascript:;">消息通知</a></li>
+	            </ul>
+	
+	
+	        </div>
+	    </div>
+	
+	    <div class="header-wrapper">
+	        <div class="header w clearfix">
+	            <!-- logo -->
+	            <h1 class="logo" title="小米">
+	                小米官网
+	                <a class="home" href="/"></a>
+	                <a class="mi" href="/"></a>
+	            </h1>
+	
+	            <!-- 中间导航条 -->
+	            <div class="nav-wrapper">
+	                <!-- 创建导航条  -->
+	                <ul class="nav clearfix">
+	                    <li class="all-goods-wrapper">
+	                        <a class="all-goods" href="#">全部商品分类</a>
+	
+	                        <!-- 左侧导航菜单 -->
+	                        <ul class="left-menu">
+	                            <li>
+	                                <a href="#">
+	                                    手机 电话卡
+	                                    <i></i><!-- <i>放向左的图标字体 -->
+	                                </a>
+	                            </li>
+	
+	                            <li>
+	                                <a href="#">
+	                                    电视 盒子
+	                                    <i></i>
+	                                </a>
+	                            </li>
+	
+	                            <li>
+	                                <a href="#">
+	                                    笔记本 平板
+	                                    <i></i>
+	                                </a>
+	                            </li>
+	
+	                            <li>
+	                                <a href="#">
+	                                    家电 插线板
+	                                    <i></i>
+	                                </a>
+	                            </li>
+	                            <li>
+	                                <a href="#">
+	                                    出行 穿戴
+	                                    <i></i>
+	                                </a>
+	                            </li>
+	                            <li>
+	                                <a href="#">
+	                                    智能 路由器
+	                                    <i></i>
+	                                </a>
+	                            </li>
+	                            <li>
+	                                <a href="#">
+	                                    电源 配件
+	                                    <i></i>
+	                                </a>
+	                            </li>
+	                            <li>
+	                                <a href="#">
+	                                    健康 儿童
+	                                    <i></i>
+	                                </a>
+	                            </li>
+	                            <li>
+	                                <a href="#">
+	                                    耳机 音箱
+	                                    <i></i>
+	                                </a>
+	                            </li>
+	                            <li>
+	                                <a href="#">
+	                                    生活 箱包
+	                                    <i></i>
+	                                </a>
+	                            </li>
+	                        </ul>
+	                    </li>
+	                    <li class="show-goods"><a href="#">小米手机</a></li>
+	                    <li class="show-goods"><a href="#">Redmi 红米</a></li>
+	                    <li class="show-goods"><a href="#">电视</a></li>
+	                    <li class="show-goods"><a href="#">笔记本</a></li>
+	                    <li class="show-goods"><a href="#">家电</a></li>
+	                    <li class="show-goods"><a href="#">路由器</a></li>
+	                    <li class="show-goods"><a href="#">智能硬件</a></li>
+	                    <li><a href="#">服务</a></li>
+	                    <li><a href="#">社区</a></li>
+	
+	                    <!-- 弹出层 -->
+	                    <div class="goods-info">
+	
+	                    </div>
+	                </ul>
+	
+	            </div>
+	
+	            <!-- 搜索框 -->
+	            <div class="search-wrapper">
+	                <form class="search" action="#">
+	                    <input class="search-inp" type="text">
+	                    <button class="search-btn">
+	                        <i></i>
+	                    </button>
+	                </form>
+	            </div>
+	        </div>
+	
+	    </div>
+	
+	    <!-- banner -->
+	    <div class="banner-wrapper">
+	        <div class="banner w">
+	            <ul class="img-list">
+	                <li>
+	                    <a href="#">
+	                        <img src="./img/banner1.jpg" alt="">
+	                    </a>
+	                </li>
+	
+	                <li>
+	                    <a href="#">
+	                        <img src="./img/banner2.jpg" alt="">
+	                    </a>
+	                </li>
+	
+	                <li>
+	                    <a href="#">
+	                        <img src="./img/banner3.jpg" alt="">
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="#">
+	                        <img src="./img/banner4.jpg" alt="">
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="#">
+	                        <img src="./img/banner5.jpg" alt="">
+	                    </a>
+	                </li>
+	            </ul>
+	
+	            <div class="pointer">
+	                <a class="active" href="javascript:;"></a>
+	                <a href="javascript:;"></a>
+	                <a href="javascript:;"></a>
+	                <a href="javascript:;"></a>
+	                <a href="javascript:;"></a>
+	            </div>
+	
+	            <div class="prev-next">
+	                <a class="prev" href="javascript:;"></a>
+	                <a class="next" href="javascript:;"></a>
+	            </div>
+	        </div>
+	    </div>
+	
+	    <!-- 固定定位的工具条 -->
+	    <div class="back-top"></div>
+	
+	    <div class="ad w">
+	        <ul class="shortcut">
+	            <li>
+	                <a href="#">
+	                    <i ></i>
+	                    小米秒杀
+	                </a>
+	            </li>
+	            <li>
+	                <a href="#">
+	                    <i></i>
+	                    企业团购
+	                </a>
+	            </li>
+	
+	            <li>
+	                <a href="#">
+	                    <i></i>
+	                    F码通道
+	                </a>
+	            </li>
+	            <li>
+	                <a href="#">
+	                    <i></i>
+	                    米粉卡
+	                </a>
+	            </li>
+	            <li>
+	                <a href="#">
+	                    <i></i>
+	                    以旧换新
+	                </a>
+	            </li>
+	            <li>
+	                <a href="#">
+	                    <i></i>
+	                    话费充值
+	                </a>
+	            </li>
+	        </ul>
+	
+	        <ul class="imgs">
+	            <li>
+	                <a href="#"><img src="./img/1.jpg" alt=""></a>
+	            </li>
+	            <li>
+	                <a href="#"><img src="./img/2.jpg" alt=""></a>
+	            </li>
+	            <li>
+	                <a href="#"><img src="./img/3.jpg" alt=""></a>
+	            </li>
+	        </ul>
+	    </div>
+	
+	</body>
+	
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function backDay(){
+            var year = prompt("请输入年份：");
+            if(isRunNian(year)){
+                alert("当前年份是闰年2月份有29天");
+            }
+            else{
+                alert("当前年份是平年二月有28天")
+            }
+        }
+        backDay();
+
+
+        function isRunNian(year){
+            var flag = false;
+            if(year % 4 == 0 && year % 100 != 0 || year % 400 ==0){
+                flag = true
+            }
+            return flag;
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

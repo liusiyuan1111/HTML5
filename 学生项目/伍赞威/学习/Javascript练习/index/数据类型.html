@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+
+    <script>
+        var x,y,z;
+        x = 22;
+        y = 13;
+        z = x + y;
+    
+        document.getElementById("demo").innerHTML = "z的值是" + z + "。";
+    </script>
+    <!--------------------------------------------------------------------------------->
+    <button type="button" onclick="myFunction()">点击我</button>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+        function myFunction(){
+            document.getElementById("demo1").innerHTML = "hello world";
+            document.getElementById("demo2").innerHTML = "good";
+        }
+    </script>
+
+    <p id="demo3"></p>
+
+    <script>
+        var int = ["post", "vivo", "oppo"]
+        document.getElementById("demo3").innerHTML = int[1]
+    </script>
+
+    <p id="demo4"></p>
+
+    <script>
+        var person = {
+            name : "shab",
+            age : 50,
+            eyecolor : "blue"
+        };
+
+        document.getElementById("demo4").innerHTML = person.name + " is " + person.age + " yearsold " + "eyecolor is " + person.eyecolor + "."
+    </script>
+
+    <p id="demo5"></p>
+
+    <script>
+        document.getElementById("demo4").innerHTML = 
+        typeof "" + "<br>" +
+        typeof "bill" + "<br>" + 
+        typeof 123;
+    </script>
+</body>
+</html>
